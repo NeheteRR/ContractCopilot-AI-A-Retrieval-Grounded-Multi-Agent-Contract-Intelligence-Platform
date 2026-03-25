@@ -53,6 +53,20 @@
 
 ## ⚙️ Installation & Running the System
 
+### 🔑 Default Login Credentials
+
+The system seeds a default admin account on first startup. Use these to log in to the dashboard:
+
+| Field | Value |
+| :--- | :--- |
+| **Email** | `admin@example.com` |
+| **Password** | `admin123` |
+| **Role** | `Admin` |
+
+> **⚠️ Security Warning**: Change these credentials before deploying to any non-local environment. Update the seed values in `backend/core/security.py`.
+
+---
+
 ### 1. Prerequisites
 
 | Requirement | Version | Notes |
@@ -174,5 +188,4 @@ This automatically starts Redis, the FastAPI backend, the Celery worker, and the
 *   **Industrial OCR**: Uses `PPStructure` to handle real-world document messiness (columns, tables, varying fonts).
 *   **Production Patterns**: Uses Asynchronous Task Queues (Celery) and Repository patterns for clean, scalable backend design.
 
----
-**Technical Note**: If encountering `shm.dll` errors on Windows during torch loading, ensure `import torch` is the first line in your entry scripts.
+
