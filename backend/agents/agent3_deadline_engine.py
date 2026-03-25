@@ -13,7 +13,7 @@ Return JSON:
       "id": <int>,
       "deadline": {
         "raw": "<string>",
-        "normalized": { ... }
+        "normalized": "YYYY-MM-DD"
       }
     }
   ]
@@ -30,7 +30,7 @@ def extract_json(text):
     return None
 
 
-def run_deadline_engine(contract_id: str, obligations: List[Dict], reference_date: str, model="gpt-oss:20b"):
+def run_deadline_engine(contract_id: str, obligations: List[Dict], reference_date: str, model="gemma3:4b"):
 
     prompt = SYSTEM_PROMPT + f"\nReference date: {reference_date}\n\nObligations:\n" + json.dumps(obligations)
 

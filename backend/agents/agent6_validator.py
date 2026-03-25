@@ -40,7 +40,7 @@ def norm_text_for_dup(t: str) -> str:
 # Optional LLM explanation
 # -----------------------
 
-def llm_explain(issue: Dict, obligation: Optional[Dict], model="gpt-oss:20b") -> Optional[str]:
+def llm_explain(issue: Dict, obligation: Optional[Dict], model="gemma3:4b") -> Optional[str]:
     prompt = f"""
 You are a contract validation assistant.
 Issue: {json.dumps(issue, ensure_ascii=False)}
@@ -184,7 +184,9 @@ def find_conflicts(obligations: List[Dict]) -> List[Dict]:
             mapping[key] = {"norms": set(), "ids": []}
 
         if norm:
-            mapping[key]["norms"].add(norm)
+            # Handle potential dicts or non-strings from LLMs
+            norm_str = json.dumps(norm) if isinstance(norm, (dict, list)) else str(norm)
+            mapping[key]["norms"].add(norm_str)
 
         mapping[key]["ids"].append(ob.get("id"))
 
@@ -212,7 +214,7 @@ def run_validator(
     risks: Optional[List[Dict]] = None,
     reference_date: Optional[str] = None,
     use_llm: bool = False,
-    llm_model: str = "gpt-oss:20b"
+    llm_model: str = "gemma3:4b"
 ) -> Dict:
 
     if not reference_date:

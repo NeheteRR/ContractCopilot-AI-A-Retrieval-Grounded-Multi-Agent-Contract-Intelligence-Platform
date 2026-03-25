@@ -49,11 +49,12 @@ Question:
 Is this obligation explicitly supported by the context?
 
 Return STRICT JSON:
-{
+
+{{
   "grounded": true/false,
-  "confidence": <0.0 to 1.0>,
-  "reason": "<short explanation>"
-}
+  "confidence": 0.0,
+  "reason": "short explanation"
+}}
 """
 
 
@@ -61,6 +62,9 @@ def extract_json_safe(text: str):
     """
     Safely extract JSON from LLM response.
     """
+    if not text:
+        return None
+
     try:
         return json.loads(text)
     except:
@@ -69,14 +73,14 @@ def extract_json_safe(text: str):
             try:
                 return json.loads(match.group(0))
             except:
-                pass
+                return None
     return None
 
 
 def llm_grounding_check(
     obligation: Dict,
     context_chunks: List[str],
-    model: str = "gpt-oss:20b"
+    model: str = "gemma3:4b"
 ) -> Dict:
 
     context = "\n\n".join(context_chunks)
@@ -92,13 +96,20 @@ def llm_grounding_check(
         max_tokens=300
     )
 
+    if not response or "response" not in response:
+        return {
+            "grounded": False,
+            "confidence": 0.0,
+            "reason": "LLM returned no response"
+        }
+
     parsed = extract_json_safe(response.get("response", ""))
 
     if not parsed:
         return {
             "grounded": False,
             "confidence": 0.0,
-            "reason": "Invalid verification response"
+            "reason": "Invalid JSON from LLM"
         }
 
     return parsed
@@ -124,7 +135,7 @@ Answer ONLY YES or NO.
 def strict_yes_no_check(
     obligation: Dict,
     context_chunks: List[str],
-    model: str = "gpt-oss:20b"
+    model: str = "gemma3:4b"
 ) -> bool:
 
     context = "\n\n".join(context_chunks)
@@ -139,6 +150,9 @@ def strict_yes_no_check(
         model=model,
         max_tokens=20
     )
+
+    if not response or "response" not in response:
+        return False
 
     answer = response.get("response", "").strip().upper()
 
@@ -178,7 +192,7 @@ def apply_grounding_guard(
         overlap_score = lexical_overlap_score(action_text, context_chunks)
 
         if overlap_score < lexical_threshold:
-            continue  # reject weak lexical grounding
+            continue
 
         # -----------------------------------------
         # Step 2: Structured LLM grounding check

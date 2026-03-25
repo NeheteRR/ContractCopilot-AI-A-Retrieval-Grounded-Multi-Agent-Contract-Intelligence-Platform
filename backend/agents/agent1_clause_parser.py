@@ -42,7 +42,7 @@ def extract_json(text: str):
     return None
 
 
-def run_clause_parser(contract_id: str, retrieved_chunks: List[str], model="gpt-oss:20b") -> List[Dict]:
+def run_clause_parser(contract_id: str, retrieved_chunks: List[str], model="gemma3:4b") -> List[Dict]:
     """
     Pure function version of Agent 1.
     """

@@ -66,7 +66,9 @@ def run_contract_pipeline(
         seen = set()
         unique = []
         for b in blocks:
-            t = b.strip()
+            # Handle both string blocks and Document objects
+            content = b.page_content if hasattr(b, "page_content") else b
+            t = content.strip()
             if t not in seen:
                 seen.add(t)
                 unique.append(t)

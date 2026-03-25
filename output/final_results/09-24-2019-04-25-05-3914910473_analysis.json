@@ -1,0 +1,247 @@
+{
+    "contract_id": "09-24-2019-04-25-05-3914910473",
+    "reference_date": "2026-03-25",
+    "clauses_count": 21,
+    "obligations_count": 3,
+    "risks_count": 3,
+    "tasks_count": 3,
+    "validation_status": "clean",
+    "clauses": [
+        {
+            "type": "Miscellaneous",
+            "text": "condition that such persons are made aware of the terms of this Agreement and their obligations.",
+            "source": "retrieved_chunk"
+        },
+        {
+            "type": "Miscellaneous",
+            "text": "therein, along with the Disclosing Party's rights to the Confidential Information. The Receiving Party shall be responsible for ensuring its Representatives comply with the terms of this Agreement.",
+            "source": "retrieved_chunk"
+        },
+        {
+            "type": "Miscellaneous",
+            "text": "scope of the Permitted Purpose of the Confidential Information to the Receiving Party. This includes, but it not limited to any license, patent or copyright.",
+            "source": "retrieved_chunk"
+        },
+        {
+            "type": "Miscellaneous",
+            "text": "No warranty, express or implied, i",
+            "source": "retrieved_chunk"
+        },
+        {
+            "type": "Miscellaneous",
+            "text": "requirement to demonstrate any actual damage sustained by the Disclosing Party.",
+            "source": "retrieved_chunk"
+        },
+        {
+            "type": "Miscellaneous",
+            "text": "8.Breach",
+            "source": "retrieved_chunk"
+        },
+        {
+            "type": "Miscellaneous",
+            "text": "5.Return of information and property",
+            "source": "retrieved_chunk"
+        },
+        {
+            "type": "Miscellaneous",
+            "text": "7.No obligation",
+            "source": "retrieved_chunk"
+        },
+        {
+            "type": "Miscellaneous",
+            "text": "10.Duratior",
+            "source": "retrieved_chunk"
+        },
+        {
+            "type": "Miscellaneous",
+            "text": "6.No implied rights",
+            "source": "retrieved_chunk"
+        },
+        {
+            "type": "Miscellaneous",
+            "text": "given as to the accuracy or completeness of any Confidential Information provided by the Disclosing Party",
+            "source": "retrieved_chunk"
+        },
+        {
+            "type": "Miscellaneous",
+            "text": "Representatives\" shall mean directors, employees, professional advisors or anyone involved with the Party in a professional or business capacity. Disclosing Party\" shall mean the Party that discloses Confidential Information directly or indirectly to the Receiving Party in relation to this Agreement.",
+            "source": "retrieved_chunk"
+        },
+        {
+            "type": "Miscellaneous",
+            "text": "The ReceivingParty acknowledges and agrees that the Confidential Information is and remain: the property of the Disclosing Party. The Receiving party must, at the end of this Agreement or within seven days following written instruction by the Disclosing Party to do so, return or destroy all Confidential Information in the Receiving Party's possession, custody or control. The Receiving Party may retain one (1) copy of any such Confidential Information to be stored securely with its Party.",
+            "source": "retrieved_chunk"
+        },
+        {
+            "type": "Miscellaneous",
+            "text": "pertaining to the Field, including but not limited to inventions; know-how; trade secrets; techniques; processes; designs; drawings; product designs; formulae and analysis; and any business information, including but not limited to price lists; customer lists; cost analyses; reports; surveys, market information and data.",
+            "source": "retrieved_chunk"
+        },
+        {
+            "type": "Miscellaneous",
+            "text": "is Confidentiality and Non-Disclosure Agreement (hereinafter referred to as the Agreement dated Effective Date)",
+            "source": "retrieved_chunk"
+        },
+        {
+            "type": "Miscellaneous",
+            "text": "11. Agreement in counterparts",
+            "source": "retrieved_chunk"
+        },
+        {
+            "type": "Miscellaneous",
+            "text": "12. Applicable Law and Jurisdiction",
+            "source": "retrieved_chunk"
+        },
+        {
+            "type": "Miscellaneous",
+            "text": "13. Successor and assign",
+            "source": "retrieved_chunk"
+        },
+        {
+            "type": "Miscellaneous",
+            "text": "14.Third parties",
+            "source": "retrieved_chunk"
+        },
+        {
+            "type": "Miscellaneous",
+            "text": "15. Communications",
+            "source": "retrieved_chunk"
+        },
+        {
+            "type": "Miscellaneous",
+            "text": "16.Secrecy",
+            "source": "retrieved_chunk"
+        }
+    ],
+    "obligations": [
+        {
+            "id": 1,
+            "type": "compliance",
+            "action_required": "ensure its Representatives comply with the terms of this Agreement.",
+            "responsible_party": "Receiving Party",
+            "deadline": {
+                "raw": null,
+                "normalized": "2026-03-25"
+            },
+            "conditions": null,
+            "penalties": null,
+            "risk_level": "medium",
+            "source_clause": "therein, along with the Disclosing Party's rights to the Confidential Information. The Receiving Party shall be responsible for ensuring its Representatives comply with the terms of this Agreement.",
+            "grounding_confidence": 1.0,
+            "grounding_reason": "The context explicitly states: 'The Receiving Party shall be responsible for ensuring its Representatives comply with the terms of this Agreement.'"
+        },
+        {
+            "id": 2,
+            "type": "other",
+            "action_required": "return or destroy all Confidential Information in the Receiving Party's possession, custody or control.",
+            "responsible_party": "Receiving Party",
+            "deadline": {
+                "raw": "within seven days following written instruction by the Disclosing Party",
+                "normalized": "2026-03-25"
+            },
+            "conditions": "at the end of this Agreement or within seven days following written instruction by the Disclosing Party to do so",
+            "penalties": null,
+            "risk_level": "high",
+            "source_clause": "The Receiving party must, at the end of this Agreement or within seven days following written instruction by the Disclosing Party to do so, return or destroy all Confidential Information in the Receiving Party's possession, custody or control.",
+            "grounding_confidence": 1.0,
+            "grounding_reason": "The context explicitly states: 'The Receiving Party must, at the end of this Agreement or within seven days following written instruction by the Disclosing Party to do so, return or destroy all Confidential Information in the Receiving Party's possession, custody or control.'"
+        },
+        {
+            "id": 3,
+            "type": "other",
+            "action_required": "return or destroy all Confidential Information",
+            "responsible_party": "Receiving Party",
+            "deadline": {
+                "raw": null,
+                "normalized": "2026-03-25"
+            },
+            "conditions": "at the end of this Agreement or within seven days following written instruction by the Disclosing Party to do so",
+            "penalties": null,
+            "risk_level": "high",
+            "source_clause": "The Receiving party must, at the end of this Agreement or within seven days following written instruction by the Disclosing Party to do so, return or destroy all Confidential Information in the Receiving Party's possession, custody or control.",
+            "grounding_confidence": 1.0,
+            "grounding_reason": "The context explicitly states: 'The Receiving Party must, at the end of this Agreement or within seven days following written instruction by the Disclosing Party to do so, return or destroy all Confidential Information in the Receiving Party's possession, custody or control.'"
+        }
+    ],
+    "risks": [
+        {
+            "obligation_id": 1,
+            "risk_category": "compliance",
+            "severity": "medium",
+            "likelihood": "medium",
+            "impact": "Failure to ensure Representatives comply with the agreement could lead to breaches of confidentiality and potential legal action.",
+            "mitigation": "Implement robust training and monitoring programs for Receiving Party Representatives.",
+            "risk_score": 4,
+            "contract_id": "09-24-2019-04-25-05-3914910473"
+        },
+        {
+            "obligation_id": 2,
+            "risk_category": "operational",
+            "severity": "high",
+            "likelihood": "high",
+            "impact": "Non-compliance with the return/destruction of confidential information could result in significant legal penalties and reputational damage.",
+            "mitigation": "Establish clear procedures for handling and disposal of confidential information, with documented verification of compliance.",
+            "risk_score": 9,
+            "contract_id": "09-24-2019-04-25-05-3914910473"
+        },
+        {
+            "obligation_id": 3,
+            "risk_category": "operational",
+            "severity": "high",
+            "likelihood": "high",
+            "impact": "Non-compliance with the return/destruction of confidential information could result in significant legal penalties and reputational damage.",
+            "mitigation": "Establish clear procedures for handling and disposal of confidential information, with documented verification of compliance.",
+            "risk_score": 9,
+            "contract_id": "09-24-2019-04-25-05-3914910473"
+        }
+    ],
+    "tasks": [
+        {
+            "contract_id": "09-24-2019-04-25-05-3914910473",
+            "obligation_id": 2,
+            "title": "return or destroy all Confidential Information in the Receiving Party's possession, custody or control.",
+            "responsible_party": "Receiving Party",
+            "due_date": "2026-03-25",
+            "bucket": "this_week",
+            "priority": "critical",
+            "risk_score": 9,
+            "notify": true
+        },
+        {
+            "contract_id": "09-24-2019-04-25-05-3914910473",
+            "obligation_id": 3,
+            "title": "return or destroy all Confidential Information",
+            "responsible_party": "Receiving Party",
+            "due_date": "2026-03-25",
+            "bucket": "this_week",
+            "priority": "critical",
+            "risk_score": 9,
+            "notify": true
+        },
+        {
+            "contract_id": "09-24-2019-04-25-05-3914910473",
+            "obligation_id": 1,
+            "title": "ensure its Representatives comply with the terms of this Agreement.",
+            "responsible_party": "Receiving Party",
+            "due_date": "2026-03-25",
+            "bucket": "this_week",
+            "priority": "normal",
+            "risk_score": 4,
+            "notify": false
+        }
+    ],
+    "validation": {
+        "contract_id": "09-24-2019-04-25-05-3914910473",
+        "reference_date": "2026-03-25",
+        "total_obligations": 3,
+        "issues_count": 0,
+        "status": "clean",
+        "issues": []
+    },
+    "evaluation": {
+        "faithfulness": 0.31666666666666665,
+        "context_precision": 0.19999999999999998,
+        "context_recall": 0.3333333333333333,
+        "answer_relevancy": 0.5499999999999999
+    }
+}

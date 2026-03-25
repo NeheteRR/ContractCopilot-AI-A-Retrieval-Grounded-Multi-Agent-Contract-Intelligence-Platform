@@ -1,0 +1,202 @@
+{
+    "contract_id": "17.04.01%20BPS%20Non-Disclosure%20and%20Data%20Sharing%20Agreement%20-%20Transportation%20Challenge%20vF",
+    "reference_date": "2026-03-25",
+    "clauses_count": 12,
+    "obligations_count": 3,
+    "risks_count": 3,
+    "tasks_count": 3,
+    "validation_status": "clean",
+    "clauses": [
+        {
+            "type": "Termination",
+            "text": "BPS may terminate this agreement with VENDOR at any time, for any reason, with either written or verbal notice. VENDOR must give the designated BPS representative 3-day written and verbal notice of any termination of this agreement with BPS.",
+            "source": "retrieved_chunk"
+        },
+        {
+            "type": "Termination",
+            "text": "Termination of this Agreement, however, does not affect any Party's obligations, duties or rights imposed or granted by separate instrument such as a grant or other contract.",
+            "source": "retrieved_chunk"
+        },
+        {
+            "type": "Miscellaneous",
+            "text": "accordance with this Agreement and all applicable current or future federal, state, and local laws, and all applicable rules and regulations.",
+            "source": "retrieved_chunk"
+        },
+        {
+            "type": "Termination",
+            "text": "This Agreement shall survive the termination of the services to be provided by VENDOR or any other agreement by and between the parties.",
+            "source": "retrieved_chunk"
+        },
+        {
+            "type": "Miscellaneous",
+            "text": "All of the provisions of this agreement are severable. If any provision of this Agreement is rendered invalid or unenforceable by State or Federal statute or regulations or declared null and void by any court of competent jurisdiction, the remaining provisions of this Agreement will remain in full force and effect.",
+            "source": "retrieved_chunk"
+        },
+        {
+            "type": "Miscellaneous",
+            "text": "This Agreement is intended as the complete, final and exclusive statement of the parties with respect to the subject matter hereof, and supersedes any prior agreements or understandings between the parties hereto.",
+            "source": "retrieved_chunk"
+        },
+        {
+            "type": "Amendment",
+            "text": "This Agreement may be amended, modified or supplemented only by a written agreement",
+            "source": "retrieved_chunk"
+        },
+        {
+            "type": "Miscellaneous",
+            "text": "The parties attention is called to General Laws c. 268A (the Conflict of Interest Law). No party shall act in collusion with any other party, person or entity to circumvent such law.",
+            "source": "retrieved_chunk"
+        },
+        {
+            "type": "Miscellaneous",
+            "text": "The Parties agree that all activity pursuant to this Agreement shall be in accordance with this Agreement and all applicable current or future federal, state, and local laws.",
+            "source": "retrieved_chunk"
+        },
+        {
+            "type": "Confidentiality",
+            "text": "Department of Education denying VENDOR access to Confidential Information and other such penalties as dictated by law or equity.",
+            "source": "retrieved_chunk"
+        },
+        {
+            "type": "Miscellaneous",
+            "text": "VENDOR acknowledges and agrees that the breach or threatened breach by VENDOR, or its employees and/or representatives of their obligations under this Agreement will cause serious and irreparable harm to BPS that cannot be adequately compensated by monetary damages alone and that BPS may seek injunctive Relief.",
+            "source": "retrieved_chunk"
+        },
+        {
+            "type": "Miscellaneous",
+            "text": "shall be responsible for transmitting all data or other record of all data requested and received pursuant to the Agreement, including confirmation of the return or destruction of data as described herein.",
+            "source": "retrieved_chunk"
+        }
+    ],
+    "obligations": [
+        {
+            "id": 1,
+            "type": "other",
+            "action_required": "give the designated BPS representative 3-day written and verbal notice of any termination of this agreement with BPS",
+            "responsible_party": "VENDOR",
+            "deadline": {
+                "raw": "null",
+                "normalized": "2026-03-28"
+            },
+            "conditions": "termination of this agreement with BPS",
+            "penalties": "Department of Education denying VENDOR access to Confidential Information and other such penalties as dictated by law or equity.",
+            "risk_level": "high",
+            "source_clause": "BPS may terminate this agreement with VENDOR at any time, for any reason, with either written or verbal notice. VENDOR must give the designated BPS representative 3-day written and verbal notice of any termination of this agreement with BPS.",
+            "grounding_confidence": 1.0,
+            "grounding_reason": "The context states: 'VENDOR must give the designated BPS representative 3-day written and verbal notice of any termination of this agreement with BPS.'"
+        },
+        {
+            "id": 2,
+            "type": "compliance",
+            "action_required": "shall be responsible for transmitting all data or other record of all data requested and received pursuant to the Agreement, including confirmation of the return or destruction of data as described herein.",
+            "responsible_party": "VENDOR",
+            "deadline": {
+                "raw": "null",
+                "normalized": "2026-03-28"
+            },
+            "conditions": "pursuant to the Agreement",
+            "penalties": "null",
+            "risk_level": "medium",
+            "source_clause": "shall be responsible for transmitting all data or other record of all data requested and received pursuant to the Agreement, including confirmation of the return or destruction of data as described herein.",
+            "grounding_confidence": 1.0,
+            "grounding_reason": "The clause 'shall be responsible for transmitting all data or other record of all data requested and received pursuant to the Agreement, including confirmation of the return or destruction of data as described herein.' is explicitly stated in section 33 of the agreement."
+        },
+        {
+            "id": 3,
+            "type": "compliance",
+            "action_required": "accordance with this Agreement and all applicable current or future federal, state, and local laws, and all applicable rules and regulations.",
+            "responsible_party": "VENDOR",
+            "deadline": {
+                "raw": "null",
+                "normalized": "2026-03-28"
+            },
+            "conditions": "null",
+            "penalties": "null",
+            "risk_level": "medium",
+            "source_clause": "accordance with this Agreement and all applicable current or future federal, state, and local laws, and all applicable rules and regulations.",
+            "grounding_confidence": 1.0,
+            "grounding_reason": "Clause 15 states: 'The parties attention is called to General Laws c. 268A (the Conflict of Interest Law). No party shall act in collusion with any other party, person or entity to circumvent such law.' This directly supports the obligation to comply with all applicable laws and regulations."
+        }
+    ],
+    "risks": [
+        {
+            "obligation_id": 1,
+            "risk_category": "legal",
+            "severity": "critical",
+            "likelihood": "high",
+            "impact": "Failure to provide timely notice of termination could lead to Department of Education denying access to Confidential Information and potential legal action.",
+            "mitigation": "Implement a robust notification process with documented confirmation of delivery to the BPS representative.",
+            "risk_score": 12,
+            "contract_id": "17.04.01%20BPS%20Non-Disclosure%20and%20Data%20Sharing%20Agreement%20-%20Transportation%20Challenge%20vF"
+        },
+        {
+            "obligation_id": 2,
+            "risk_category": "compliance",
+            "severity": "medium",
+            "likelihood": "medium",
+            "impact": "Non-compliance with data transmission requirements could result in regulatory scrutiny and potential fines.",
+            "mitigation": "Establish and maintain a documented data management and transmission process, including confirmation procedures.",
+            "risk_score": 4,
+            "contract_id": "17.04.01%20BPS%20Non-Disclosure%20and%20Data%20Sharing%20Agreement%20-%20Transportation%20Challenge%20vF"
+        },
+        {
+            "obligation_id": 3,
+            "risk_category": "compliance",
+            "severity": "medium",
+            "likelihood": "high",
+            "impact": "Failure to comply with applicable laws and regulations could lead to significant penalties, legal action, and reputational damage.",
+            "mitigation": "Implement a comprehensive compliance program, including regular legal reviews and training for relevant personnel.",
+            "risk_score": 6,
+            "contract_id": "17.04.01%20BPS%20Non-Disclosure%20and%20Data%20Sharing%20Agreement%20-%20Transportation%20Challenge%20vF"
+        }
+    ],
+    "tasks": [
+        {
+            "contract_id": "17.04.01%20BPS%20Non-Disclosure%20and%20Data%20Sharing%20Agreement%20-%20Transportation%20Challenge%20vF",
+            "obligation_id": 1,
+            "title": "give the designated BPS representative 3-day written and verbal notice of any termination of this agreement with BPS",
+            "responsible_party": "VENDOR",
+            "due_date": "2026-03-28",
+            "bucket": "this_week",
+            "priority": "critical",
+            "risk_score": 12,
+            "notify": true
+        },
+        {
+            "contract_id": "17.04.01%20BPS%20Non-Disclosure%20and%20Data%20Sharing%20Agreement%20-%20Transportation%20Challenge%20vF",
+            "obligation_id": 3,
+            "title": "accordance with this Agreement and all applicable current or future federal, state, and local laws, and all applicable rules and regulations.",
+            "responsible_party": "VENDOR",
+            "due_date": "2026-03-28",
+            "bucket": "this_week",
+            "priority": "high",
+            "risk_score": 6,
+            "notify": true
+        },
+        {
+            "contract_id": "17.04.01%20BPS%20Non-Disclosure%20and%20Data%20Sharing%20Agreement%20-%20Transportation%20Challenge%20vF",
+            "obligation_id": 2,
+            "title": "shall be responsible for transmitting all data or other record of all data requested and received pursuant to the Agreement, including confirmation of the return or destruction of data as described herein.",
+            "responsible_party": "VENDOR",
+            "due_date": "2026-03-28",
+            "bucket": "this_week",
+            "priority": "normal",
+            "risk_score": 4,
+            "notify": false
+        }
+    ],
+    "validation": {
+        "contract_id": "17.04.01%20BPS%20Non-Disclosure%20and%20Data%20Sharing%20Agreement%20-%20Transportation%20Challenge%20vF",
+        "reference_date": "2026-03-25",
+        "total_obligations": 3,
+        "issues_count": 0,
+        "status": "clean",
+        "issues": []
+    },
+    "evaluation": {
+        "faithfulness": 0.3333333333333333,
+        "context_precision": 0.3666666666666667,
+        "context_recall": 0.3666666666666667,
+        "answer_relevancy": 0.7999999999999999
+    }
+}

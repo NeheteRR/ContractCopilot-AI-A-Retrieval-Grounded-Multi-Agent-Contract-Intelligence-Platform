@@ -1,0 +1,62 @@
+version: '3.8'
+
+services:
+  redis:
+    image: redis:7-alpine
+    container_name: contract_copilot_redis
+    ports:
+      - "6379:6379"
+    restart: always
+
+  backend:
+    build: .
+    container_name: contract_copilot_backend
+    ports:
+      - "8001:8001"
+    environment:
+      - REDIS_URL=redis://redis:6379/0
+      - OLLAMA_BASE_URL=http://host.docker.internal:11434
+      - DATABASE_URL=sqlite:///./system3.db
+    volumes:
+      - .:/app
+      - /app/venv
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      - redis
+    restart: always
+
+  worker:
+    build: .
+    container_name: contract_copilot_worker
+    command: celery -A backend.celery.celery_app worker --loglevel=info
+    environment:
+      - REDIS_URL=redis://redis:6379/0
+      - OLLAMA_BASE_URL=http://host.docker.internal:11434
+      - DATABASE_URL=sqlite:///./system3.db
+    volumes:
+      - .:/app
+      - /app/venv
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      - redis
+      - backend
+    restart: always
+
+  frontend:
+    build:
+      context: ./frontend
+    container_name: contract_copilot_frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - BACKEND_URL=http://backend:8001
+    depends_on:
+      - backend
+    restart: always
+
+volumes:
+  chroma_db:
+  output:
+  data:

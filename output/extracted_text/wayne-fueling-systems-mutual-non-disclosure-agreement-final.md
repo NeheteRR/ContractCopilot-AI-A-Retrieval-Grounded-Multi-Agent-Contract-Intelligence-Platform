@@ -1,0 +1,111 @@
+In connectIc
+Systems LL
+(as to information disclosed by it, the aDisclosing Party) is prepared to furnish the other party (as to information received by it, the
+Receiving Party) with certain confidential and proprietary information.
+Confidential Information" as used in this agreement (the
+Agreement) shall mean all such information that is or has been disclosed by the Disclosing Party or its Affiliates (defined below):
+(i) in writing or by email or other tangible electronic storage medium and is clearly marked Contidential* or Proprietary*; or (i) orally
+or visually, and then followed within ten (10) working days thereafter with a disclosure complying with the requirements of clause (i)
+above. Confidential Information also includes, but is not limited to, personal data as defined in this Agreement or by applicable law,
+whichever is broader, and personal data shall not be required to be marked Contidential or Proprietary* to be treated as
+Confidential Information under this Agreement. As used in this Agreement, *personal data* means any information relating: (i) to an
+identified; or (i) to a directly or indirectly identifiable, natural person. All other information shall be deemed to be non-confidential. As
+used in this Agreement, an Affiliate with respect to a party means any entity (including without limitation any individual, corporation,
+company, partnership, limited liability company or group)that directly, or indirectly through one or more intermediaries, controls, is
+Information in whateve
+form maintained, including any notes, summaries, reports, analyses or other material derived by the Receiving.
+Party, its Affiliates, or its or their Authorized Parties (defined below), in whole or in part, from the Confidential Information (collectively,.
+Notes); (iil) use the Confidential Information and Notes only for the purposes of evaluating a possible Transaction and the terms.
+thereof; (ii) use the same degree of care as with its own confidential information, which shall be at least a reasonable standard of care,.
+to prevent disclosure of the Confidential Information and Notes, except to its Affiliates, and its or their officers, directors, employees,
+agents, advisors, representatives, service providers, consultants and/or subcontractors (collectively, Authorized Parties), solely to
+than those described in clause (li) above) that the Confidential Information has been made available, that the Receiving Party is
+the extent necessary to permit them to assist the Receiving Party in evaluating the Transaction; and (iv) not disclose to persons (other
+considering a possible Transaction or that the parties have had or are having discussions or negotiations with respect thereto. The
+Receiving Party further agrees that prior to disclosing any Confidential Information to its Affiliates, or its or their Authorized Parties, as
+allowed hereunder, such Affiliates and/or Authorized Parties will be advised of the contidential nature of the Confidential Information,
+provided a copy of this Agreement and directed to abide by its terms. The Receiving Party agrees to be responsible for any breach of.
+this Agreement by it, its Affiliates, or its or their Authorized Parties. Each party acknowledges that money damages would not be a
+sufficient remedy for any breach of this Agreement. Accordingly, in the event of any such breach, in addition to any other remedies at
+Iaw or in equity that a party may have, it shall be entitied to seek equitable relief, including injunctive relief or specific performance or.
+both (although neither party shall be entitied to any special, consequential, indirect, punitive or exemplary damages as a result of a
+breach of this Agreement, whether a claim is asserted in contract, tort, or otherwise). Obligations in this Section 2 regarding.
+Confidential Information shall, with respect to each disclosure of Confidential Information hereunder, continue for three (3) years from
+the date of each disclosure of Confidential Information. Nothing herein is intended to limit or abridge the protection of trade secrets
+particular portions of the Confidential Information disclosed by the Disclosing Party if
+eir Authorized Parties; (ii) was available on a non-confidential basis prior to its disclosure to the Receiving Party
+ is or becomes generally available to the public other than as a result of disclosure by the Receiving Party, its
+/ailable to the Receiving Party, its Affiliates, or its or their Authorized Parties on a non-confidential basis from a
+ne Disclosing Party when such source is not, to the best of the Receiving Party's knowledge, subject to a
+ation with the Disclosing Party; or (iv) was independently developed by the Receiving Party, its Affiliates, or its c
+ties, without reference to the Confidential Information, and the Receiving Party can verify the development of si
+en documentation
+of the Confidential Information disclosed by the Disclosing Party if
+such information: (i) is or becomes generally available to the public other than as a result of disclosure by the Receiving Party, its.
+Affiliates, or its or their Authorized Parties; (ii) was available on a non-confidential basis prior to its disclosure to the Receiving Party;
+(ii) is or becomes available to the Receiving Party, its Affiliates, or its or their Authorized Parties on a non-confidential basis from a
+source other than the Disclosing Party when such source is not, to the best of the Receiving Party's knowledge, subject to a
+confidentiality obligation with the Disclosing Party; or (iv) was independently developed by the Receiving Party, its Affliates, or its or
+their Authorized Parties, without reference to the Confidential Information, and the Receiving Party can verify the development of suc
+nformation by written documentation.
+4. If either party decides not to proceed with a Transaction, it will promptly inform the other party of that decision. In addition, the
+Disclosing Party may elect at any time by notice to the Receiving Party to terminate further access to and such party's review of the
+Confidential Information. In any such case or upon any other termination of this Agreement, the Receiving Party willimmediately:
+(i) return all Confidential Information disclosed to it and (ii) destroy, with such destruction to be certified by the Receiving Party, all
+Notes, without retaining any copy thereof. No such termination of the Agreement or return or destruction of the Confidential
+Information or Notes will affect the confidentiality obligations of the Receiving Party, its Affliates, or its or their Authorized Parties, all
+Jarty decides not t
+Party may elect at any time by notice to the Receiving Party to terminate further access to and such party's revi
+I Information. In any such case or upon any other termination of this Agreement, the Receiving Party will immec
+Confidential Information disclosed to it and (ii) destroy, with such destruction to be certified by the Receiving P
+out retaining any copy thereof. No such termination of the Agreement or return or destruction of the Confidenti
+or Notes will affect the confidentiality obligations of the Receiving Party, its Affiliates, or its or their Authorized F
+II continue in effect as provided in this Agreement.
+Mutual Non-Disclosure Aqreemen
+
+--- Page Break ---
+
+dISCL
+own exclusively all rights in
+ideas, inventions
+ discussions between WAYNE FUELING
+nformation, database rights, trademark rights and other intellectual property rights, and the Company will execute assignments as
+ary to achieve that result. Nothing in this Agreement shall be deemed to grant a license directly or by implication, estoppel or
+sImilar legal process
+disclose any Conmidential Information oi
+such party agrees to provide the Disclosing Party with prompt
+notice of each such request, to the extent practicable, so that the Disclosing Party may seek an appropriate protective order, waive
+compliance by the Receiving Party with the provisions of this Agreement, or both. If, absent the entry of a protective order or receipt
+of a waiver, the Receiving Party is, in the opinion of its counsel, legally compelled to disclose such Confidential Information or Notes,.
+the Receiving Party may disclose such Confidential Information or Notes to the persons and to the extent required without liability
+under this Agreement and will use its best efforts to obtain confidential treatment for any Confidential Information or Notes so.
+disclosed.
+r. This Agreement contains the entire understanding between the parties relating to the subject matter contained herein, and
+supersedes all prior and collateral communication, reports and understandings between the parties relating thereto. This Agreement
+s not intended as a teaming, joint venture or other such arrangement. No change, modification or addition to or waiver of any
+provision of this Agreement shall be binding unless in writing and signed by authorized representatives of both parties. Except as
+provided herein, the parties agree that any disclosures contemplated hereunder, and any discussions or communications between the
+parties relating thereto, shall not restrict either party's right to take whatever future actions such party unilaterally determines to be in
+to enter into agreements or relationships with third parties covering subjects related to the matters covered herein. All provisions of
+this Agreement are severable, and if any provision or part thereof is deemed invalid or otherwise unenforceable, then such term shall
+be construed to reflect the closest lawful interpretation of the parties original intent, and the remaining provisions of this Agreement
+shall remain valid, enforceable and binding. This Agreement may be executed in multiple counterparts, each of which, when executed
+and delivered, shall be deemed an original, but all of which shall constitute one and the same instrument. Any signature page of any
+such counterpart, or any facsimile transmission thereof, may be attached or appended to any other counterpart to complete a fully
+executed counterpart of this Agreement, and any facsimile transmission of any signature of a party shall be deemed an original and
+shall bind such party. The Receiving Party shall notify the Disclosing Party immediately upon discovery of any loss, unauthorized
+disclosure or use of the Confidential Information and/or Notes or any other breach of this Agreement by the Receiving Party, its
+Affiliates, or its or their Authorized Parties. In any such event, the Receiving Party shall help the Disclosing Party in every reasonable
+way to regain possession of the Confidential Information and/or Notes and shallprevent any further unauthorized disclosure or use.
+This Agreement will be binding on and inure to the benefit of the parties hereto and their respective successors and permitted assigns
+Except for the foregoing, neither party may assign this Agreement or any of their rights and obligations hereunder or delegate the
+performance thereof to a third party without the prior written consent of the other party. Except as stated herein, nothing in this
+Agreement is intended to confer any benetit to any third party or any right to enforce any term of this Agreement. Any failure by a
+party hereto to enforce the other partys strict performance of any provision of this Agreement will not constitute a waiver of that
+party's right to subsequently enforce such provision or any other provision of this Agreement.
+8. WAYNE FUELING SYSTEMS LLC and Company each agrees to take such measures as may be necessary to ensure that the
+disclosure of Confidential Information complies with any export control laws which may govern such disclosure. The Receiving Party
+represents and warrants that no technical data it receives in conjunction with the Confidential Information that is subject to the export.
+
+--- Page Break ---
+

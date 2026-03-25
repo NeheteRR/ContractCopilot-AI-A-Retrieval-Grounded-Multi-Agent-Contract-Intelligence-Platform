@@ -1,0 +1,80 @@
+{
+    "contract_id": "final_full_verify",
+    "reference_date": "2026-03-20",
+    "clauses_count": 2,
+    "obligations_count": 2,
+    "risks_count": 0,
+    "tasks_count": 2,
+    "validation_status": "clean",
+    "clauses": [
+        {
+            "type": "Payment",
+            "text": "The Buyer shall pay the Seller $10,000.",
+            "source": "page_1"
+        },
+        {
+            "type": "Termination",
+            "text": "This Agreement expires on 2026-12-31.",
+            "source": "page_10"
+        }
+    ],
+    "obligations": [
+        {
+            "id": 1,
+            "type": "payment",
+            "action_required": "Pay $10,000",
+            "responsible_party": "Buyer",
+            "deadline": {
+                "raw": "N/A",
+                "normalized": null
+            },
+            "source_clause": "The Buyer shall pay the Seller $10,000.",
+            "risk_level": "low"
+        },
+        {
+            "id": 2,
+            "type": "compliance",
+            "action_required": "Compliance with expiry",
+            "responsible_party": "Both",
+            "deadline": {
+                "raw": "2026-12-31",
+                "normalized": "2026-12-31"
+            },
+            "source_clause": "This Agreement expires on 2026-12-31.",
+            "risk_level": "low"
+        }
+    ],
+    "risks": [],
+    "tasks": [
+        {
+            "contract_id": "final_full_verify",
+            "obligation_id": 2,
+            "title": "Compliance with expiry",
+            "responsible_party": "Both",
+            "due_date": "2026-12-31",
+            "bucket": "future",
+            "priority": "normal",
+            "risk_score": 1,
+            "notify": false
+        },
+        {
+            "contract_id": "final_full_verify",
+            "obligation_id": 1,
+            "title": "Pay $10,000",
+            "responsible_party": "Buyer",
+            "due_date": null,
+            "bucket": "no_due_date",
+            "priority": "normal",
+            "risk_score": 1,
+            "notify": false
+        }
+    ],
+    "validation": {
+        "contract_id": "final_full_verify",
+        "reference_date": "2026-03-20",
+        "total_obligations": 2,
+        "issues_count": 0,
+        "status": "clean",
+        "issues": []
+    }
+}

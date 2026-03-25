@@ -37,7 +37,7 @@ def extract_json(text: str):
     return None
 
 
-def run_obligation_extractor(contract_id: str, clauses: List[Dict], model="gpt-oss:20b") -> List[Dict]:
+def run_obligation_extractor(contract_id: str, clauses: List[Dict], model="gemma3:4b") -> List[Dict]:
 
     prompt = SYSTEM_PROMPT + "\n\nClauses:\n" + json.dumps(clauses, ensure_ascii=False)
 

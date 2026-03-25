@@ -1,6 +1,7 @@
 from sqlalchemy import Column, Integer, String, Text, ForeignKey, Float, Date, Boolean
 from sqlalchemy.orm import relationship
 from backend.database.engine import Base
+from datetime import datetime
 
 
 class Contract(Base):
@@ -100,3 +101,17 @@ class EvaluationScore(Base):
     context_precision = Column(Float)
     context_recall = Column(Float)
     answer_relevancy = Column(Float)
+
+
+class PipelineTrace(Base):
+    __tablename__ = "pipeline_traces"
+
+    id = Column(Integer, primary_key=True, index=True)
+    contract_id = Column(String, index=True)
+    step_name = Column(String)
+    status = Column(String)
+    duration = Column(Float)
+    input_summary = Column(Text)
+    output_summary = Column(Text)
+    details_json = Column(Text)
+    timestamp = Column(String) # For ISO format

@@ -60,6 +60,16 @@ cover/
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
+system3.db
+
+# Project specific
+tests/
+chroma_db/
+output/
+data/
+venv/
+.env
+PROJECT_OVERVIEW.md
 
 # Flask stuff:
 instance/

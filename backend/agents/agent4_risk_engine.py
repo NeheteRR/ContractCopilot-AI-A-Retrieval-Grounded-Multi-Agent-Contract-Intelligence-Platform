@@ -12,9 +12,7 @@ SEVERITY_SCORE = {
 
 SYSTEM_PROMPT = """
 You are Agent 4: Contract Risk Analysis Agent.
-
 For each obligation, analyze risk based ONLY on the given obligation.
-
 Return STRICT JSON:
 
 {
@@ -51,7 +49,7 @@ def extract_json(text: str):
 def run_risk_engine(
     contract_id: str,
     obligations: List[Dict],
-    model: str = "gpt-oss:20b"
+    model: str = "gemma3:4b"
 ) -> List[Dict]:
 
     if not obligations:
@@ -60,6 +58,9 @@ def run_risk_engine(
     prompt = SYSTEM_PROMPT + "\n\nObligations:\n" + json.dumps(obligations, ensure_ascii=False)
 
     response = ollama_generate(prompt, model=model, max_tokens=1500)
+    if not response or "response" not in response:
+        print("Agent 4: Invalid LLM response")
+        return []
     model_text = response.get("response", "")
 
     parsed = extract_json(model_text)

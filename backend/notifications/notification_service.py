@@ -1,5 +1,8 @@
 from backend.notifications.email.smtp_client import send_email
 from backend.notifications.calendar.ics_generator import generate_ics_event
+import os
+
+DEFAULT_RECIPIENT = os.getenv("NOTIFICATION_RECIPIENT", "manager@company.com")
 
 
 class NotificationService:
@@ -22,7 +25,7 @@ class NotificationService:
             ics_file = generate_ics_event(task["title"], task["due_date"])
 
         send_email(
-            to="manager@company.com",
+            to=DEFAULT_RECIPIENT,
             subject=subject,
             body_html=html_body,
             attachment=ics_file,

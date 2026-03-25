@@ -8,9 +8,9 @@ def send_notification(task):
     print(f"Sending notification for task {task['title']}")
 
 def trigger_notifications(tasks):
-    for task in tasks:
-        if task.get("notify"):
-            send_notification.delay(task)
+    # Call the real dispatch task instead of the placeholder print
+    if tasks:
+        dispatch_notifications.delay(tasks)
 
 @celery_app.task(bind=True, max_retries=3)
 def send_deadline_task(self, task: dict):

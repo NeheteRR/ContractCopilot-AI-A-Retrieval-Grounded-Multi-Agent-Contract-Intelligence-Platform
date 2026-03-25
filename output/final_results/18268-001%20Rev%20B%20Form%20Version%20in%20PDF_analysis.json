@@ -1,0 +1,234 @@
+{
+    "contract_id": "18268-001%20Rev%20B%20Form%20Version%20in%20PDF",
+    "reference_date": "2026-03-25",
+    "clauses_count": 11,
+    "obligations_count": 4,
+    "risks_count": 4,
+    "tasks_count": 4,
+    "validation_status": "clean",
+    "clauses": [
+        {
+            "type": "Miscellaneous",
+            "text": "the terms, covenants, conditions or provisions of this Agreement shall not be. considered a waiver or relinquishment of future compliance therewith; nor shall a waiver by either party of any breach or any term, covenant, condition, agreement or provision, operate as a waiver of any other term, covenant condition, agreement or provision.",
+            "source": "retrieved_chunk"
+        },
+        {
+            "type": "Miscellaneous",
+            "text": "This Agreement may be executed in any number of counterparts and by different parties hereto in separate counterparts, each of which when so executed",
+            "source": "retrieved_chunk"
+        },
+        {
+            "type": "Miscellaneous",
+            "text": "NOW, THEREFORE, in consideration of the mutual promises and covenants contained herein, and of other good and valid consideration, the receipt and sufficiency of which is hereby acknowledged, the parties hereto, intending to be legally bound, hereby agree as follows:",
+            "source": "retrieved_chunk"
+        },
+        {
+            "type": "Miscellaneous",
+            "text": "Confidential Information.The term \"Confidential Information\" means any and all tangible and intangible information disclosed to Receiver in oral, written, graphic,",
+            "source": "retrieved_chunk"
+        },
+        {
+            "type": "Miscellaneous",
+            "text": "supersedes all prior oral or written understandings and agreements relating thereto, except as expressly otherwise provided, and may not be altered, modified or waived in whole or in part, except in writing, signed by duly authorized representatives of the parties hereto.",
+            "source": "retrieved_chunk"
+        },
+        {
+            "type": "Miscellaneous",
+            "text": "The failure of either party to insist upon the performance of any of the terms, covenants, conditions or provisions of this Agreement shall not be.",
+            "source": "retrieved_chunk"
+        },
+        {
+            "type": "Miscellaneous",
+            "text": "register, evidence, secure, maintain or litigate all such VIDAR rights and interests in the Intellectual Property throughout the world, including all commercial, legal or administrative proceedings involving the same. All expenses of applying for and obtaining such rights and interests shall be borne by VIDAR. VIDAR'shall reimburse Receiver for pre-approved expenses paid in connection with such cooperation.",
+            "source": "retrieved_chunk"
+        },
+        {
+            "type": "Miscellaneous",
+            "text": "Return of Confidential Information. Upon the request of VIDAR or the termination or expiration of this Confidential Agreement, Receiver shall promptly return to VIDAR all copies of the Confidential Information and obtained by Receiver.",
+            "source": "retrieved_chunk"
+        },
+        {
+            "type": "Miscellaneous",
+            "text": "Receiver shall: (i) hold the Confidential Information in strict confidence; (ii) use the Confidential Information only for the purposes as expressly directed by VIDAR; and (iii) provide such information only to those of its personnel who: (y) have a need to know the same to further VIDAR's interests; and (z) become",
+            "source": "retrieved_chunk"
+        },
+        {
+            "type": "Miscellaneous",
+            "text": "(e) is disclosed to a third party by VIDAR without restrictions against non-disclosure similar to those contained in this Agreement;",
+            "source": "retrieved_chunk"
+        },
+        {
+            "type": "Miscellaneous",
+            "text": "This Agreement contains the entire understanding and agreement of the parties hereto with respect to the subject matter contained herein supersedes all prior oral or written understandings and agreements relating thereto,",
+            "source": "retrieved_chunk"
+        }
+    ],
+    "obligations": [
+        {
+            "id": 1,
+            "type": "compliance",
+            "action_required": "hold the Confidential Information in strict confidence",
+            "responsible_party": "Receiver",
+            "deadline": {
+                "raw": "2026-03-25",
+                "normalized": "2026-03-25"
+            },
+            "conditions": "as expressly directed by VIDAR",
+            "penalties": null,
+            "risk_level": "high",
+            "source_clause": "Receiver shall: (i) hold the Confidential Information in strict confidence; (ii) use the Confidential Information only for the purposes as expressly directed by VIDAR; and (iii) provide such information only to those of its personnel who: (y) have a need to know the same to further VIDAR's interests; and (z) become",
+            "grounding_confidence": 1.0,
+            "grounding_reason": "The text states: \"Receiver shall: (i) hold the Confidential Information in strict confidence; (ii) use the Confidential Information only for the purposes as expressly directed by VIDAR; and (iii) provide such information only to those of its personnel who: (y) have a need to know the same to further VIDAR's interests; and (z) become\" This directly outlines the obligation to hold information confidentially and use it only as directed."
+        },
+        {
+            "id": 2,
+            "type": "deliverable",
+            "action_required": "promptly return to VIDAR all copies of the Confidential Information and obtained by Receiver",
+            "responsible_party": "Receiver",
+            "deadline": {
+                "raw": "2026-03-25",
+                "normalized": "2026-03-25"
+            },
+            "conditions": "upon the request of VIDAR or the termination or expiration of this Confidential Agreement",
+            "penalties": null,
+            "risk_level": "medium",
+            "source_clause": "Return of Confidential Information. Upon the request of VIDAR or the termination or expiration of this Confidential Agreement, Receiver shall promptly return to VIDAR all copies of the Confidential Information and obtained by Receiver.",
+            "grounding_confidence": 1.0,
+            "grounding_reason": "The obligation 'promptly return to VIDAR all copies of the Confidential Information and obtained by Receiver' is explicitly stated in the 'Return of Confidential Information' clause, which is triggered 'upon the request of VIDAR or the termination or expiration of this Confidential Agreement.'"
+        },
+        {
+            "id": 3,
+            "type": "other",
+            "action_required": "register, evidence, secure, maintain or litigate all such VIDAR rights and interests in the Intellectual Property throughout the world, including all commercial, legal or administrative proceedings involving the same",
+            "responsible_party": "VIDAR",
+            "deadline": {
+                "raw": "2026-03-25",
+                "normalized": "2026-03-25"
+            },
+            "conditions": "during the term of this agreement",
+            "penalties": null,
+            "risk_level": "high",
+            "source_clause": "register, evidence, secure, maintain or litigate all such VIDAR rights and interests in the Intellectual Property throughout the world, including all commercial, legal or administrative proceedings involving the same. All expenses of applying for and obtaining such rights and interests shall be borne by VIDAR.",
+            "grounding_confidence": 1.0,
+            "grounding_reason": "The context explicitly states: 'VIDAR'shall register, evidence, secure, maintain or litigate all such VIDAR rights and interests in the Intellectual Property throughout the world, including all commercial, legal or administrative proceedings involving the same. All expenses of applying for and obtaining such rights and interests shall be borne by VIDAR.'"
+        },
+        {
+            "id": 4,
+            "type": "other",
+            "action_required": "provide such information only to those of its personnel who: (y) have a need to know the same to further VIDAR's interests; and (z) become",
+            "responsible_party": "Receiver",
+            "deadline": {
+                "raw": "2026-03-25",
+                "normalized": "2026-03-25"
+            },
+            "conditions": "as directed by VIDAR",
+            "penalties": null,
+            "risk_level": "medium",
+            "source_clause": "Receiver shall: (i) hold the Confidential Information in strict confidence; (ii) use the Confidential Information only for the purposes as expressly directed by VIDAR; and (iii) provide such information only to those of its personnel who: (y) have a need to know the same to further VIDAR's interests; and (z) become",
+            "grounding_confidence": 1.0,
+            "grounding_reason": "The text states: 'Receiver shall: (i) hold the Confidential Information in strict confidence; (ii) use the Confidential Information only for the purposes as expressly directed by VIDAR; and (iii) provide such information only to those of its personnel who: (y) have a need to know the same to further VIDAR's interests; and (z) become' This directly outlines the obligation."
+        }
+    ],
+    "risks": [
+        {
+            "obligation_id": 1,
+            "risk_category": "compliance",
+            "severity": "critical",
+            "likelihood": "high",
+            "impact": "Significant breach of confidentiality could lead to severe legal and reputational damage, substantial financial penalties, and loss of trust.",
+            "mitigation": "Implement strict access controls, conduct regular audits, and provide comprehensive training to the Receiver on confidentiality obligations.",
+            "risk_score": 12,
+            "contract_id": "18268-001%20Rev%20B%20Form%20Version%20in%20PDF"
+        },
+        {
+            "obligation_id": 2,
+            "risk_category": "operational",
+            "severity": "medium",
+            "likelihood": "medium",
+            "impact": "Failure to promptly return confidential information could lead to VIDAR incurring costs associated with tracking down and securing the materials, and potential legal action.",
+            "mitigation": "Establish a clear process for information retrieval upon request, including designated personnel and timelines.",
+            "risk_score": 4,
+            "contract_id": "18268-001%20Rev%20B%20Form%20Version%20in%20PDF"
+        },
+        {
+            "obligation_id": 3,
+            "risk_category": "legal",
+            "severity": "high",
+            "likelihood": "medium",
+            "impact": "VIDAR bears the full cost of registering intellectual property, which could represent a significant financial burden if rights are not secured effectively.",
+            "mitigation": "VIDAR should proactively manage the registration process and maintain clear communication with the Receiver regarding requirements.",
+            "risk_score": 6,
+            "contract_id": "18268-001%20Rev%20B%20Form%20Version%20in%20PDF"
+        },
+        {
+            "obligation_id": 4,
+            "risk_category": "compliance",
+            "severity": "medium",
+            "likelihood": "medium",
+            "impact": "Unauthorized disclosure of confidential information to personnel could lead to a breach of confidentiality and potential legal repercussions.",
+            "mitigation": "Implement a need-to-know basis for access to confidential information and conduct regular personnel reviews.",
+            "risk_score": 4,
+            "contract_id": "18268-001%20Rev%20B%20Form%20Version%20in%20PDF"
+        }
+    ],
+    "tasks": [
+        {
+            "contract_id": "18268-001%20Rev%20B%20Form%20Version%20in%20PDF",
+            "obligation_id": 1,
+            "title": "hold the Confidential Information in strict confidence",
+            "responsible_party": "Receiver",
+            "due_date": "2026-03-25",
+            "bucket": "this_week",
+            "priority": "critical",
+            "risk_score": 12,
+            "notify": true
+        },
+        {
+            "contract_id": "18268-001%20Rev%20B%20Form%20Version%20in%20PDF",
+            "obligation_id": 3,
+            "title": "register, evidence, secure, maintain or litigate all such VIDAR rights and interests in the Intellectual Property throughout the world, including all commercial, legal or administrative proceedings involving the same",
+            "responsible_party": "VIDAR",
+            "due_date": "2026-03-25",
+            "bucket": "this_week",
+            "priority": "high",
+            "risk_score": 6,
+            "notify": true
+        },
+        {
+            "contract_id": "18268-001%20Rev%20B%20Form%20Version%20in%20PDF",
+            "obligation_id": 2,
+            "title": "promptly return to VIDAR all copies of the Confidential Information and obtained by Receiver",
+            "responsible_party": "Receiver",
+            "due_date": "2026-03-25",
+            "bucket": "this_week",
+            "priority": "normal",
+            "risk_score": 4,
+            "notify": false
+        },
+        {
+            "contract_id": "18268-001%20Rev%20B%20Form%20Version%20in%20PDF",
+            "obligation_id": 4,
+            "title": "provide such information only to those of its personnel who: (y) have a need to know the same to further VIDAR's interests; and (z) become",
+            "responsible_party": "Receiver",
+            "due_date": "2026-03-25",
+            "bucket": "this_week",
+            "priority": "normal",
+            "risk_score": 4,
+            "notify": false
+        }
+    ],
+    "validation": {
+        "contract_id": "18268-001%20Rev%20B%20Form%20Version%20in%20PDF",
+        "reference_date": "2026-03-25",
+        "total_obligations": 4,
+        "issues_count": 0,
+        "status": "clean",
+        "issues": []
+    },
+    "evaluation": {
+        "faithfulness": 0.16666666666666666,
+        "context_precision": 0.2833333333333333,
+        "context_recall": 0.25,
+        "answer_relevancy": 0.6333333333333333
+    }
+}
