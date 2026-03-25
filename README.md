@@ -51,22 +51,29 @@
 
 ---
 
-## ⚙️ Essential Setup Information
+## ⚙️ Installation & Running the System
 
-### 1. Prerequisites (Strict)
-*   **Python**: 3.10 or 3.11 (Recommended)
-*   **Ollama**: Install and run locally. Execute `ollama pull gemma3:4b`.
-*   **Redis**: Required as the message broker for Celery notifications.
-*   **Hardware**: A GPU (NVIDIA 8GB+ VRAM) is strongly recommended for `PaddleOCR` and `Sentence Transformers`.
+### 1. Prerequisites
 
-### 2. Environment Configuration (`.env`)
-Ensure the following keys are present in your root `.env`:
+| Requirement | Version | Notes |
+| :--- | :--- | :--- |
+| Python | 3.10 / 3.11 | Required |
+| Ollama | Latest | Must be running locally |
+| Redis | 7.x | Required for Celery notifications |
+| Node.js | 20.x | Required for the frontend |
+| GPU (NVIDIA) | 8GB+ VRAM | Strongly recommended for OCR & Embeddings |
+
+---
+
+### 2. Environment Configuration
+
+Create a `.env` file in the project root:
 ```env
-# Backend & RAG
+# LLM
 OLLAMA_BASE_URL=http://localhost:11434
 MODEL_NAME=gemma3:4b
 
-# Database & Broker
+# Message Broker
 REDIS_URL=redis://localhost:6379/0
 
 # Notifications (SMTP)
@@ -77,23 +84,75 @@ SMTP_PASS=your-app-specific-password
 NOTIFICATION_RECIPIENT=alerts-receiver@company.com
 ```
 
-### 3. Service Execution Order (Standard)
-To run the full system manually, start services in this specific order:
-1.  **Ollama**: `ollama serve`
-2.  **Redis Server**: Ensure Redis is running (Windows: `redis-server.exe`).
-3.  **FastAPI Backend**: `uvicorn main:app --reload --port 8001`
-4.  **Celery Worker**: `celery -A backend.celery.celery_app worker --loglevel=info`
-5.  **Frontend**: `npm run dev` (within `/frontend`)
+---
 
-### 4. Docker Orchestration (Recommended)
-The fastest way to start the entire system (Redis, Backend, Worker, Frontend) is using Docker Compose:
+### 3. Option A — Manual Setup (Terminal)
+
+**Step 1: Clone and create a virtual environment**
+```bash
+git clone https://github.com/your-repo/contract-copilot-ai.git
+cd contract-copilot-ai
+python -m venv venv
+
+# Activate
+.\venv\Scripts\activate       # Windows
+source venv/bin/activate      # macOS/Linux
+```
+
+**Step 2: Install Python dependencies**
+```bash
+pip install -r requirements.txt
+```
+
+**Step 3: Pull the LLM model**
+```bash
+ollama pull gemma3:4b
+```
+
+**Step 4: Start Redis** (in a separate terminal)
+```bash
+# Windows (if Redis is installed)
+redis-server
+
+# Or via WSL / Docker
+docker run -d -p 6379:6379 redis:7-alpine
+```
+
+**Step 5: Start the FastAPI backend** (in a separate terminal)
+```bash
+uvicorn main:app --reload --port 8001
+```
+
+**Step 6: Start the Celery worker** (in a separate terminal)
+```bash
+celery -A backend.celery.celery_app worker --loglevel=info
+```
+
+**Step 7: Start the frontend** (in a separate terminal)
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+The application will be available at:
+- **Frontend**: `http://localhost:3000`
+- **API Docs**: `http://localhost:8001/docs`
+
+---
+
+### 4. Option B — Docker Compose (One Command)
 
 ```bash
-# Build and start all services
+# Build all images and start every service
 docker compose up --build
 ```
 
-**Note**: When running in Docker, the system is configured to look for **Ollama** at `http://host.docker.internal:11434`. Ensure Ollama is running on your host machine.
+This automatically starts Redis, the FastAPI backend, the Celery worker, and the Next.js frontend in the correct order.
+
+> **Note**: Ollama must still be running on your **host machine**. Docker containers connect to it via `host.docker.internal:11434`.
+
+---
 
 ---
 
