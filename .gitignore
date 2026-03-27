@@ -215,3 +215,5 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+PROJECT_OVERVIEW.md
+contract_copilot_analysis.md
